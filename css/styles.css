@@ -499,7 +499,7 @@ footer p {
     padding: 16px;
     background-color: #fcfcfc;
     width: 27.5%;
-    height: 550px;
+    height: 570px;
     position: relative;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
     border-radius: 4px;
@@ -543,6 +543,7 @@ input[type=text] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    padding-left: 30px;
 }
 
 label {
@@ -551,6 +552,7 @@ label {
     line-height: 117%;
     letter-spacing: 0.04em;
     color: var(--light-slate);
+    position: relative;
 }
 
 .comment-area {
@@ -590,34 +592,98 @@ label {
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 1;
-  }
+}
   
-  .img-overlay {
+.img-overlay {
     position: relative;
     overflow: hidden;
     height: 300px;
     
-  }
+}
   
-  .portfolio-cards:hover .overlay {
+.portfolio-cards:hover .overlay {
     transform: translateY(0px);
     box-shadow: 0px 2px 1px 0px #2E2F4214;
     box-shadow: 0px 1px 1px 0px #2E2F4229;
     box-shadow: 0px 1px 6px 0px #2E2F4214;
     
-  }
+}
 
-  .overlay-text {
+.overlay-text {
     padding: 40px 32px 164px 32px;
     color: var(--text-transition);
-  }
+}
 
-  
 
-  .description{
+
+.description{
     margin-top: 0;
     height: 109px;
-  }
+}
+
+.name-svg {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 7px;
+    top: 33px;
+    margin-right: 5px;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border: 1px solid #4D5AE5;
+}
+
+input[type=text]:focus + .name-svg {
+    fill: #4d5ae5;
+}
+
+input[type=submit] {
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    background-color: #4D5AE5;
+    color: #ffffff;
+    border: transparent;
+    margin-top: 15px;
+    
+}
+
+.submit-section {
+    display: flex;
+    justify-content: center;
+}
+
+.conditions {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.privacy-policy {
+    line-height: 133%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--iris);
+}
+
+.hidden-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.custom-checkbox svg {
+    fill: none;
+    stroke: rgba(46, 47, 66, 0.4);
+    width: 16px;
+    height: 16px;
+    
+}
 
 
 
