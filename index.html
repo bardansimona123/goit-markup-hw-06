@@ -67,12 +67,12 @@
 
                   <label for="comment">
                     <span>Comment</span>
-                    <input class="comment-area" type="text" id="comment" name="comment" placeholder ="Text input">
+                    <textarea class="comment-area" type="text" id="comment" name="comment" placeholder ="Text input"></textarea>
                   </label>
 
                   <label for="hidden-checkbox" class="custom-checkbox">
-                    <svg >
-                        <use href="./icons/symbol-defs.svg#icon-checkbox"></use>
+                    <svg class="svg-ckecked">
+                        <use href="./icons/symbol-defs.svg#icon-checkbox-checked"></use>
                     </svg>
                     <input type="checkbox" id="hidden-checkbox" class="hidden-checkbox">
                     <span class="conditions">I accept the terms and conditions of the</span> <span class="privacy-policy">Privacy Policy</span> 
@@ -304,9 +304,10 @@
                         </div>
                     </li>
                 </ul>
-            </div>
-            
+            </div>  
+
         </section>
+
         <section class="section-4">
             <h2>Customers</h2>
             <div class="icons-row">
@@ -390,6 +391,15 @@
                     </a> 
                 </div>
             </div>
+            <form class="subscribe">
+                <div>
+                    <h2 class="subscribe-title">Subscribe</h2>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="submit" value="Subscribe">
+                </div>
+            </form>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
